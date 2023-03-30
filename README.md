@@ -1,6 +1,7 @@
-# python-http-server
+# Python Scripts Library
+## HTTP-Server.py
 Python HTTP server with verbose logging that takes the port as parameter
-## Usage
+### Usage
 ```shell
 # To use the default port 80
 python3 HTTP-Server.py
