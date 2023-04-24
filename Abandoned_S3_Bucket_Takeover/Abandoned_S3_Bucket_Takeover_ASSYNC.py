@@ -70,7 +70,7 @@ with open(r"domains.txt", 'r') as file:
             count += 1
 file.close()
 
-sem = asyncio.Semaphore(100)
+sem = asyncio.Semaphore(50)
 
 
 def prgreen(skk): print("\033[92m {}\033[00m".format(skk))
