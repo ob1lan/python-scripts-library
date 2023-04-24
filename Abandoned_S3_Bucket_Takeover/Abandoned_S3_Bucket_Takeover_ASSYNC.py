@@ -60,7 +60,7 @@ if not os.path.exists("excluded.txt"):
     open("excluded.txt", 'w').close()
 
 if not os.path.exists("findings.txt"):
-    open("errors.txt", 'w').close()
+    open("findings.txt", 'w').close()
 
 # Count the number of lines in domains.txt. Variable 'count' will be used in progress bar
 with open(r"domains.txt", 'r') as file:
