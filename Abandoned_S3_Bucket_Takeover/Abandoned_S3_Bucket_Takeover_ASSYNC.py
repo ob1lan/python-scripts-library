@@ -116,6 +116,8 @@ async def get(domain, session):
             errorfile.write("ClientOSError: " + domain.strip() + "\n")
         except aiohttp.client_exceptions.TooManyRedirects:
             errorfile.write("TooManyRedirects: " + domain.strip() + "\n")
+        except aiohttp.client_exceptions.ServerDisconnectedError:
+            errorfile.write("ServerDisconnectedError: " + domain.strip() + "\n")
         except Exception as e:
             print("Unable to get url {} due to {}.".format(domain.strip(), e.__class__))
             errorfile.write("Error: " + domain.strip() + "\n")
